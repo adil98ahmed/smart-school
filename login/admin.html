@@ -1,0 +1,92 @@
+<html>
+    
+    
+<head>
+     
+    <link  rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index_style.css"/>
+
+
+    <script src="js/popper.min.js"> </script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+
+
+    
+</head>
+<body>
+
+    <div class="allpage">
+<div class="navall ">
+   <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand  justify-content-center" href="#">
+    <img src="images/sslogo.png" width="40" height="35" class="d-inline-block align-top" alt="">
+    Smart School
+  </a>
+  </nav>
+</div>
+    </div>
+   
+    <div class="login-all-page container">
+    <div class="row">
+        <div class="col-md-5 caption">
+           <img class="img-fluid animated pulse " src="images/sslogo.png" >
+        </div>
+        <div class="col-md-5 hor-line">
+        
+        <div id='AppendHere'></div>
+<!--start login form-->
+<form id="loginform" action="#"  method="get"><!--action="the site link"-->
+	<!--start header-->
+	<h1 class="">LOG IN</h1>
+    <!--site link-->
+    <!--end site-->
+    
+    <div class="input-info">
+        <!--the input div containe the information of the user-->
+        <i class="fa fa-user"></i>
+        <!--user name-->
+        <input id="usernameField" class="pl-4" type="text" placeholder="User-Name">
+        <i class="fa fa-envelope"></i>
+        <!--yser password-->
+        <input id="passwordField" class="pl-4" type="password" placeholder="Password">
+        <!--the checkbox to make the browser remember the user-->
+        <input class="pl-4" type="checkbox">
+        <span>Remember Me</span><br>
+    </div>
+
+        <div class="loginchoose text-center">
+             <a><button type="submit" onclick="adminLogin()" class="btn btn-primary login alogin">Admin</button>
+            </a>
+            <a><button  onclick="teacherLogin()" class="btn btn-primary login alogin">teacher</button>
+            </a>
+              <a><button type="submit" onclick="studentLogin()" class="btn btn-primary login alogin">student</button>
+            </a>
+             <a><button type="submit" onclick="parentLogin()" class="btn btn-primary login alogin">parent</button>
+            </a>
+    </div>
+
+	<p class="forget-password clickme py-4">If you forget your password please <a href="#">click here</a></p>
+
+</form>
+<!--End login form-->
+
+        </div>
+        
+    </div>
+    
+    
+    </div>
+        
+        </div>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+     <script src="js/mine.js" ></script>
+
+</body>
+    
+
+</html>

@@ -1,0 +1,156 @@
+<html>
+    
+    
+<head>
+     
+   <link  rel="stylesheet" href="css/bootstrap.min.css"/>
+   <link  rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/quizzes.css"/>
+     
+    <script src="js/jquery-3.3.1.min.js"> </script>
+    <script src="js/popper.min.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+
+
+    
+</head>
+<body>
+
+    
+<div class="navall  fixed-top">
+   <div class="container ">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+    <img src="images/sslogo.png" width="40" height="35" class="d-inline-block" alt="">
+    Smart School
+  </a>
+      
+      <form class="form-inline ml-auto my-1">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success btn-sm my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  </nav>
+</div>
+    </div>
+    
+    <div class="paddallpage">
+    <div class="side-menu fixed-top">
+    
+        <div class="side">
+            <div class="content">
+                <div class="logo">
+                    <a href="#"><img class="img-fluid" src="images/sslogo.png" ></a>
+                </div>
+                <ul class="nav">
+                     <li ><a href="register-attendance.html">Attendance</a></li>
+                    <li><a  href="assignment.html">assignments</a></li>
+                    <li><a href="report.html">report</a></li>
+                    <li><a href="degrees.html">Degrees</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="rate-teacher.html">Rate Teacher</a></li>
+                       <li><a href="videos.html">videos</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+            </div>
+
+<div id="the-page" class="pt-1 pagepadd ">
+    
+    <div class="container">
+        <div class="editclock">
+        <h1 class="countdown-title ">Clock</h1>
+<div id="countdown" class="countdown my-2">
+  <div class="countdown-number">
+    <span class="days countdown-time"></span>
+    <span class="countdown-text">Days</span>
+  </div>
+  <div class="countdown-number">
+    <span class="hours countdown-time"></span>
+    <span class="countdown-text">Hours</span>
+  </div>
+  <div class="countdown-number">
+    <span class="minutes countdown-time"></span>
+    <span class="countdown-text">Minutes</span>
+  </div>
+  <div class="countdown-number">
+    <span class="seconds countdown-time"></span>
+    <span class="countdown-text">Seconds</span>
+  </div>
+</div></div>
+<!-- 
+https://denis-creative.com/jstimer/
+https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
+-->
+   <div class="question">
+  <p>1. What is the tallest building in the world?</p>
+  <label>
+    <input type="radio" name="answers[1]" value="A">
+    Answer A
+  </label>
+
+  <label>
+    <input type="radio" name="answers[1]" value="B" data-correct>
+    Answer B
+  </label>
+
+  <label>
+    <input type="radio" name="answers[1]" value="C">
+    Answer C
+    </label>
+</div>
+
+<div class="question">
+  <p>2. What is the tallest building in the world?</p>
+  <label>
+    <input type="radio" name="answers[2]" value="A">
+    Answer A
+  </label>
+
+  <label>
+    <input type="radio" name="answers[2]" value="B" data-correct>
+    Answer B
+  </label>
+
+  <label>
+    <input type="radio" name="answers[2]" value="C">
+    Answer C
+    </label>
+</div>
+
+<div class="question">
+  <p>3. What is the tallest building in the world?</p>
+  <label>
+    <input type="radio" name="answers[3]" value="A">
+    Answer A
+  </label>
+
+  <label>
+    <input type="radio" name="answers[3]" value="B" data-correct>
+    Answer B
+  </label>
+
+  <label>
+    <input type="radio" name="answers[3]" value="C">
+    Answer C
+    </label>
+</div>
+
+<button class="btn" id="quiz-submit">Submit</button>
+
+<div class="py-3">
+  Score: <span id="score">0</span>
+</div>
+       
+    </div>
+        </div>
+        
+ <script src="js/quizzies.js" ></script>
+        </div>
+</body>
+    
+
+</html>

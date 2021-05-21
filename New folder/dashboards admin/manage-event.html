@@ -1,0 +1,222 @@
+<html>
+    
+    
+<head>
+     
+     
+   <link  rel="stylesheet" href="css/bootstrap.min.css"/>
+   <link  rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/events.css"/>
+     
+    <script src="js/jquery-3.3.1.min.js"> </script>
+    <script src="js/popper.min.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+
+
+    
+</head>
+<body>
+
+    
+<div class="navall  fixed-top">
+   <div class="container ">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+    <img src="images/sslogo.png" width="40" height="35" class="d-inline-block" alt="">
+    Smart School
+  </a>
+      
+      <form class="form-inline ml-auto my-1">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success btn-sm my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  </nav>
+</div>
+    </div>
+    
+    <div class="paddallpage">
+    <div class="side-menu fixed-top">
+    
+        <div class="side">
+            <div class="content">
+                <div class="logo">
+                    <a href="#"><img class="img-fluid" src="images/sslogo.png" ></a>
+                </div>
+                <ul class="nav">
+                     <li><a href="manage-teacher.html">teachers</a></li>
+                    <li><a href="manage-parent.html">parents</a></li>
+                    <li><a href="manage-student.html">students</a></li>
+                    <li><a href="manage-event.html">events</a></li>
+                    <li><a href="manage-reports.html">reports</a></li>
+                    <li><a href="manage-attendance.html">Attendance</a></li>
+
+                </ul>
+            </div>
+        </div>
+            </div>
+
+<div id="the-page" class="pt-5 pagepadd ">
+    
+    <div>
+        <div>
+    <div class="time-line">
+        <h3 class="py-4">upcoming events</h3>
+  <ul>
+    <li class="year">2018</li>
+    <li class="selected">
+      <div class="revision">
+        <div class="header">
+          <span class="date">11 maio</span>
+          <span class="revnum">Rev 123</span>
+        </div>
+        <div class="content">
+          <span class="author">DWOUGLAS MHAGNUM</span>
+          <span class="time">10:50</span>
+
+          <div class="changes">
+            <div>
+              8 alterações
+              <button class="expand-details"><i class="fas fa-angle-double-down"></i></button>
+            </div>
+            <ol>
+              <li> Nome </li>
+              <li> Nome </li>
+              <li> Nome </li>
+              <li> Nome </li>
+              <li> Nome </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="revision">
+        <div class="header">
+          <span class="date">10 maio</span>
+          <span class="revnum">REV 12</span>
+        </div>
+        <div class="content">
+          <span class="author">DWOUGLAS MHAGNUM</span>
+          <span class="time">10:50</span>
+
+          <div class="changes">
+            <div>
+              8 alterações
+              <button class="expand-details"><i class="fas fa-angle-double-down"></i></button>
+            </div>
+            <ol>
+              <li> Nome </li>
+              <li> Nome </li>
+              <li> Nome </li>
+              <li> Nome </li>
+              <li> Nome </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="revision">
+        <div class="header">
+          <span class="date">08 maio</span>
+          <span class="revnum">Rev 1</span>
+        </div>
+      </div>
+    </li>
+    <li class="year">
+      2017
+    </li>
+    <li>
+      <div class="revision">
+        <div class="header">
+          <span class="date">08 maio</span>
+          <span class="revnum">Rev 1</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary  btn-lg mx-1 my-4" data-toggle="modal" data-target="#exampleModal">
+<i class="fas fa-plus px-2"></i>Add event
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">add event</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+  <input id="eventName" type="text" class="form-control" placeholder="event name" aria-label=" event name" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+  </div>
+</div>
+          <div class="input-group mb-3">
+  <input id="eventDate" type="text" class="form-control" placeholder="event date" aria-label="event date" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+  </div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <a href="#"><button onclick="addEvent()" type="button" class="btn btn-primary">Save changes</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+          
+        <div class="eventtable">
+<table class="table table-responsive-lg table-light">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody id="ss">
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Larry the Bird</td>
+        <td >Larry the Bird</td>
+    </tr>
+  </tbody>
+</table>        </div>
+                </div>
+
+        </div>
+        </div>
+        </div>
+   
+     <script src="js/events.js" ></script>
+
+</body>
+    <script>
+    
+        function addEvent(){
+            console.log("slajn");
+            var ename = document.getElementById("eventName").value;
+            var devent = document.getElementById("eventDate").value;
+            document.getElementById("ss").innerHTML += '<tr><th scope="row">4</th><td>'+ename+'</td><td>'+devent+'</td>'
+            
+        }
+    </script>
+
+</html>
